@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin2Dec</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="body">
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <form autocomplete="off">
+                    <div class="form-group">
+                        <label for="binaryNumber">Binary Sayı</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="binaryNumber" onkeydown="BinToDec(event)">
+                        </div>
+                        <small id="binaryNumber" class="form-text text-muted">
+                            İkilik sayı tabanında bir sayı girin</small>
+                    </div>
+                    <label for="decimalNumber">Decimal Sayı</label>
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="text" id="decimalNumber" placeholder="" disabled readonly>
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="button" id="button-addon2">Kopyala</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
